@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(to bottom, var(--background-color) 0%, #111 100%);
+    background-color: var(--background-color);
     color: var(--text-color);
 }
 
@@ -56,39 +56,59 @@ header ul li a {
 }
 
 .hero {
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: var(--text-color);
 }
 
-.hero-text {
-    margin-bottom: 150px;
-}
-
-.hero-text h1 {
-    font-size: 4em;
+.section-title {
+    color: var(--text-color);
+    font-size: 2.5em;
+    text-align: center;
 }
 
 .grid-section {
     padding: 60px 20px;
-    text-align: center;
+    background: var(--background-color);
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    margin-top: 50px;
 }
 
 .grid-item {
     background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
     border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+}
+
+.grid-item h3 {
     color: var(--text-color);
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.grid-item p {
+    color: var(--secondary-color);
+}
+
+.car-image {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 footer {
@@ -98,30 +118,12 @@ footer {
     padding: 20px 0;
 }
 
-form {
-    margin-top: 20px;
-}
-
-textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid var(--secondary-color);
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--text-color);
-}
-
-button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: var(--primary-color);
-    color: var(--text-color);
-    cursor: pointer;
-}
-
 @media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 3em;
+    .hero {
+        height: 60vh;
+    }
+
+    .section-title {
+        font-size: 2em;
     }
 }

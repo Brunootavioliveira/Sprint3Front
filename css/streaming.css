@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(to bottom, var(--background-color) 0%, #111 100%);
+    background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
@@ -121,7 +121,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: var(--header-background);
+    background: linear-gradient(to bottom, var(--background-color) 0%, #111 100%);
     color: var(--text-color);
     text-align: center;
     padding: 20px 0;
