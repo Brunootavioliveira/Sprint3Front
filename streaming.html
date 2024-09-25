@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming - Fórmula E</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/streaming.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div><a class="logo" href="#hero">Fórmula E</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="carros.html">Carros</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="streaming.html">Streaming</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="live-stream">
+            <div class="stream-grid">
+                <div class="main-stream">
+                    <iframe src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="stream-chat">
+                    <div class="chat-header">Chat ao Vivo</div>
+                    <div class="chat-body">
+                        <iframe src="https://www.twitch.tv/embed/YOUR_TWITCH_CHANNEL/chat" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fórmula E. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

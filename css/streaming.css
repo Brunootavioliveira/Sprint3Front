@@ -1,0 +1,150 @@
+:root {
+    --background-color: #000;
+    --primary-color: #1e90ff;
+    --secondary-color: #fff;
+    --text-color: #fff;
+    --header-background: rgba(0, 0, 0, 0.8);
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, var(--background-color) 0%, #111 100%);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: var(--header-background);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#live-stream {
+    margin-top: 5%;
+    padding: 60px 20px;
+    background-color: var(--background-color);
+}
+
+.stream-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.stream-grid iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    border: none;
+}
+
+.stream-chat {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stream-chat iframe {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.stream-chat .chat-header {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stream-chat .chat-body {
+    overflow-y: auto;
+    height: 400px;
+    margin-top: 10px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--header-background);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 1024px) {
+    .stream-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stream-grid iframe {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stream-grid iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .stream-grid iframe {
+        height: 250px;
+    }
+}
