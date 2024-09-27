@@ -92,34 +92,14 @@ header ul li a {
 }
 
 footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
     background: linear-gradient(to bottom, var(--background-color) 0%, #111 100%);
     color: var(--text-color);
     text-align: center;
     padding: 20px 0;
 }
-
-form {
-    margin-top: 20px;
-}
-
-textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid var(--secondary-color);
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--text-color);
-}
-
-button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: var(--primary-color);
-    color: var(--text-color);
-    cursor: pointer;
-}
-
 @media (max-width: 768px) {
     .hero-text h1 {
         font-size: 3em;

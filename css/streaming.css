@@ -117,6 +117,27 @@ header ul li a {
     margin-top: 10px;
 }
 
+.text-chat {
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#btnCriar {
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #1e3c72;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#btnCriar:hover {
+    background: #162b57;
+}
+
 footer {
     position: relative;
     bottom: 0;

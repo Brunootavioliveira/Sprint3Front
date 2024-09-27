@@ -1,0 +1,106 @@
+:root {
+    --background-color: #000;
+    --primary-color: #1e90ff;
+    --secondary-color: #fff;
+    --text-color: #fff;
+    --header-background: rgba(0, 0, 0, 0.8);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-background);
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.comente-container {
+    background: linear-gradient(to bottom, var(--background-color) 0%, #3b3232 100%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 50%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    margin: 40px auto;
+}
+
+.comente-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.comente-container textarea, .comente-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+}
+
+.comente-container textarea::placeholder, .comente-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.comente-container button {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background: #1e3c72;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.comente-container button:hover {
+    background: #162b57;
+}
