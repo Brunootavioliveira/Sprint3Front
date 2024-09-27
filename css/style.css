@@ -4,6 +4,7 @@
     --secondary-color: #fff;
     --text-color: #fff;
     --header-background: rgba(0, 0, 0, 0.8);
+    --cor0: #22D4FD;
 }
 
 body {
@@ -50,7 +51,7 @@ header ul li {
 }
 
 header ul li a {
-    color: var(--secondary-color);
+    color: var(--cor0);
     text-decoration: none;
     font-weight: bold;
 }

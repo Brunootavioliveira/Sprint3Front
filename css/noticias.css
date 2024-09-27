@@ -1,3 +1,12 @@
+:root {
+    --background-color: #000;
+    --primary-color: #1e90ff;
+    --secondary-color: #fff;
+    --text-color: #fff;
+    --header-background: rgba(0, 0, 0, 0.8);
+    --cor0: #22D4FD;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -9,13 +18,11 @@ body {
 
 
 header {
-    background-color: #000;
+    background-color: var(--header-background);
     position: fixed;
-    top: 0; 
     width: 100%;
     z-index: 1000;
     padding: 10px 0;
-    color: #f9f9f9;
 }
 
 header nav {
@@ -45,7 +52,7 @@ header ul li {
 }
 
 header ul li a {
-    color: var(--secondary-color);
+    color: var(--cor0);
     text-decoration: none;
     font-weight: bold;
 }
@@ -53,6 +60,7 @@ header ul li a {
 
 main {
     padding-top: 70px; 
+    background-color: var(--secondary-color);
 }
 
 
@@ -94,6 +102,7 @@ main {
 .news-content {
     padding: 15px;
     width: 50%;
+    color: var(--background-color)
 }
 
 h2 {

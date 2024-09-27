@@ -21,3 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("Streaming page loaded successfully.");
         });
         
+const botoesCarrinho = document.querySelectorAll('.adicionar-carrinho');
+
+document.querySelectorAll('.adicionar-carrinho').forEach(button => {
+    button.addEventListener('click', function() {
+        alert('Produto adicionado ao carrinho!');
+    });
+});
+
+        

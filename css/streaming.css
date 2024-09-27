@@ -4,10 +4,7 @@
     --secondary-color: #fff;
     --text-color: #fff;
     --header-background: rgba(0, 0, 0, 0.8);
-}
-
-body, html {
-    height: 100%;
+    --cor0: #22D4FD;
 }
 
 body {
@@ -60,7 +57,7 @@ header ul li {
 }
 
 header ul li a {
-    color: var(--secondary-color);
+    color: var(--cor0);
     text-decoration: none;
     font-weight: bold;
 }
@@ -136,6 +133,59 @@ header ul li a {
 
 #btnCriar:hover {
     background: #162b57;
+}
+
+.section-title {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-color);
+    font-size: 1.9rem;
+    gap: 0.9rem;
+    text-align: left;
+    width: 40%;
+    margin-left: 10px;
+    border: 1px solid var(--cor0);
+    border-radius: 30px;
+}
+
+.grid-section {
+    padding: 60px 20px;
+    background: var(--background-color);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 10px;
+    margin: 20px;
+}
+
+.grid-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+}
+
+.grid-item h3 {
+    color: var(--text-color);
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.grid-item p {
+    color: var(--secondary-color);
+}
+
+.car-image {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 footer {
