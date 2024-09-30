@@ -72,6 +72,11 @@ header ul li a {
 
 .hero-text h1 {
     font-size: 4em;
+    text-shadow: 1px 5px 1px var(--background-color);
+}
+
+.hero-text p {
+    text-shadow: 1px 2px 1px var(--background-color);
 }
 
 .grid-section {

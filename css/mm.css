@@ -88,6 +88,7 @@ header ul li a {
     border: none;
 }
 
+
 footer {
     position: fixed;
     bottom: 0;
@@ -96,4 +97,36 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 20px 0;
+}
+
+@media (max-width: 1024px) {
+    .stream-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stream-grid iframe {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    #live-stream {
+        padding: 60px 0px;
+    }
+    .stream-grid {
+        gap: 5px;
+    }
+    .section-title {
+        font-size: 20px;
+        gap: 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .stream-grid iframe {
+        height: 250px;
+    }
+    footer{
+        font-size: 0.7em;
+    }
 }

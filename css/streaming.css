@@ -117,6 +117,7 @@ header ul li a {
 .text-chat {
     padding: 2%;
     border-radius: 5px;
+    width: 60%;
 }
 
 #btnCriar {
@@ -207,16 +208,47 @@ footer {
     .stream-grid iframe {
         height: 400px;
     }
+    .text-chat{
+        height: 3px;
+        width: 80%;
+    }
+    #btnCriar{
+        height: 42px;
+    }
+
 }
 
 @media (max-width: 768px) {
-    .stream-grid iframe {
-        height: 300px;
+    #live-stream {
+        padding: 60px 0px;
+    }
+    .stream-grid {
+        gap: 5px;
+    }
+    .section-title {
+        font-size: 20px;
+        gap: 0.7rem;
+    }
+    .stream-chat .chat-body {
+        height: 400px;
+    }
+    #btnCriar{
+        height: 30px;
     }
 }
 
 @media (max-width: 576px) {
     .stream-grid iframe {
         height: 250px;
+    }
+    .stream-chat .chat-body {
+        height: 300px;
+    }
+    .text-chat{
+        height: 10px;
+        width: 69%;
+    }
+    footer{
+        font-size: 0.7em;
     }
 }
