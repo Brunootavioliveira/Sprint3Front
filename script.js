@@ -3,11 +3,6 @@ const btnCriar = document.querySelector("#btnCriar");
 const listaPosts = document.querySelector('#listaPosts');
 const inputTexto = document.querySelector('#inputTexto');
 
-btnCriar.addEventListener('click', function (infosDoEvento) {
-    infosDoEvento.preventDefault();
-    criaPost();
-});
-
 document.addEventListener('DOMContentLoaded', () => {
             AOS.init({
                 duration: 1000,
@@ -21,12 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("Streaming page loaded successfully.");
         });
         
-const botoesCarrinho = document.querySelectorAll('.adicionar-carrinho');
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-document.querySelectorAll('.adicionar-carrinho').forEach(button => {
-    button.addEventListener('click', function() {
-        alert('Produto adicionado ao carrinho!');
+    menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
     });
 });
+
 
         

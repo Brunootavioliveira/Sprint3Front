@@ -56,6 +56,24 @@ header ul li a {
     font-weight: bold;
 }
 
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    color: var(--cor0);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex; 
+    align-items: center;
+}
+
+.nav-links li {
+    display:inline; 
+}
+
 main {
     padding-top: 70px;
     background-color: var(--secondary-color);
@@ -125,6 +143,30 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 20px 0;
+}
+
+@media (max-width: 1000px) {
+    .menu-toggle {
+        display: block; 
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column; 
+        position: absolute; 
+        top: 40px; 
+        right: 0; 
+        background-color: var(--header-background);
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 768px) {

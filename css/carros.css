@@ -56,6 +56,24 @@ header ul li a {
     font-weight: bold;
 }
 
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    color: var(--cor0);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex; 
+    align-items: center;
+}
+
+.nav-links li {
+    display:inline; 
+}
+
 .hero {
     height: 100vh;
     background-size: cover;
@@ -149,6 +167,30 @@ footer {
 
     .stream-grid iframe {
         height: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu-toggle {
+        display: block; 
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column; 
+        position: absolute; 
+        top: 40px; 
+        right: 0; 
+        background-color: var(--header-background);
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
     }
 }
 
